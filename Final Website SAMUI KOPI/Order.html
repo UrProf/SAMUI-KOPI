@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAMUI KOPI- Order</title>
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <div class="nav-left">
+            <a href="Index.html">HOMEPAGE</a>
+            <a href="AboutUs.html">ABOUT US</a>
+            <a href="Menu.html">MENU</a>
+        </div>
+        <h2 class="logo">SAMUI KOPI</h2>
+        <div class="nav-right">
+            <a class="active" href="Order.html">ORDER</a>
+            <a href="Contacts.html">CONTACTS</a>
+        </div>
+    </div>
+
+    <div class="hero-section">
+        <div class="content-wrapper">           
+            <div class="transaction-section">
+				<h1>MAKE THIS OFFER YOURS</h1>
+                <img src="Background.jpg" class="background-img" alt="Background">
+                <div class="transaction-content">			                   
+					
+					 <div class="size-section">
+                <h2>Choose Your Size:</h2>
+                <div class="size-buttons">
+                    <button class="size-btn">Short (12 oz)</button>                   
+                    <button class="size-btn">Tall (14 oz)</button>
+                    <button class="size-btn">Grande (16 oz)</button>
+                    <button class="size-btn">Venti (20 oz)</button>                   
+                </div>
+            </div>
+			
+				<div class="addons-section">
+                <h2>Add-ons:</h2>
+                <div class="addons-buttons">
+                    <button class="addon-btn">Extra Shot</button>
+					<button class="addon-btn">Whipped Cream</button>
+					<button class="addon-btn">Caramel Drizzle</button>
+					<button class="addon-btn">Cold Foam</button>
+					<button class="addon-btn">Extra Powder of Matcha</button>
+                </div>
+            </div>
+				
+				<h2>Choose a Transaction Type:</h2>
+                    <div class="transaction-buttons">
+                        <button class="transaction-btn active">Delivery</button>
+                        <button class="transaction-btn">Pick Up</button>
+                    </div>
+				
+                    <p class="delivery-note">Delivery service for Samui Kopi is available in Metro Manila and selected provincial locations only. A minimum order of Php 350 is required to proceed with any transaction.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-nav">
+            <div class="footer-links">
+                <a href="Index.html">HOMEPAGE</a>
+                <a href="AboutUs.html">ABOUT US</a>
+                <a href="Menu.html">MENU</a>
+                <a href="Order.html">ORDER</a>
+                <a href="Contacts.html">CONTACTS</a>
+            </div>
+            <div class="social-icons">
+                <a href="#" class="social-icon"><img src="Facebook.png" alt="Facebook"></a>
+                <a href="#" class="social-icon"><img src="Instagram.png" alt="Instagram"></a>
+                <a href="#" class="social-icon"><img src="Tiktok.png" alt="Tiktok"></a>
+                <a href="#" class="social-icon"><img src="Linkedin.png" alt="LinkedIn"></a>
+                <a href="#" class="social-icon"><img src="Twitter.png" alt="Twitter"></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Samui Kopi. Some rights reserved.</p>
+			<p>Maria Francia Omela</p>
+			<p>Andre Jen Sarcos</p>
+			<p>Jv Barcial</p>
+        </div>
+    </footer>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: maroon;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .navbar {
+            background-color: white;
+            padding: 60px 0;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;           
+        }
+
+        .nav-left, .nav-right {
+            display: flex;
+            gap: 50px;
+        }
+
+        .nav-left {
+            margin-left: 50px;
+        }
+
+        .nav-right {
+            margin-right: 160px;
+        }
+
+        .navbar a {
+            color: black;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 14px;
+            letter-spacing: 1px;
+            margin: 0;
+            padding: 5px 10px;
+        }
+
+        .navbar a:hover {
+            color: red;
+        }
+
+        .navbar a.active {
+            color: red;
+        }
+
+        .logo {
+            font-family: 'Italiana', serif;
+            font-size: 22px;
+            position: absolute;
+            left: 49%;
+            transform: translateX(-50%);
+			color: black;
+			margin: 5px;
+        }
+     		
+		.hero-section {
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 80px;
+        }
+		
+		.background-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.3;
+            z-index: 1;
+        }
+		
+		.transaction-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .content-wrapper {
+            max-width: 1500px;
+            width: 100%;
+            text-align: center;
+        }
+		
+		h1 {
+			font-family: 'Italiana', serif;
+            color: black;
+            font-size: 48px;
+            margin-bottom: 120px;
+            text-transform: uppercase;			
+        }
+						
+		.transaction-section {
+            position: relative;
+            padding: 120px;			
+            border-radius: 15px;
+            overflow: hidden;
+            background-color: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: maroon;
+            font-size: 24px;
+            margin-bottom: 30px;
+            font-family: 'Inter', sans-serif;
+        }
+		
+		.size-section, .addons-section {
+                margin: 40px 0;
+            }
+
+            .size-buttons, .addons-buttons {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 20px;
+                margin-bottom: 30px;
+            }
+
+            .size-btn, .addon-btn {
+                padding: 12px 25px;
+                border: 2px solid maroon;
+                border-radius: 25px;
+                font-size: 14px;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                background: transparent;
+                color: maroon;
+                font-family: 'Inter', sans-serif;
+            }
+
+            .size-btn:hover, .addon-btn:hover {
+                background: gold;
+                color: maroon;
+                border-color: transparent;
+                transform: translateY(-2px);
+                box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            }
+
+            .size-btn.active, .addon-btn.active {
+                background: gold;
+                color: maroon;
+                border-color: transparent;
+            }
+
+        .transaction-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 80px;
+        }
+
+        .transaction-btn {
+            padding: 12px 40px;
+            border: 2px solid transparent;
+            border-radius: 25px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            background: #e0e0e0;
+            color: maroon;
+            font-family: 'Inter', sans-serif;
+        }
+		
+		.transaction-btn:not(.active) {
+            border-color: maroon;  
+        }
+
+        .transaction-btn.active {
+            background: gold;
+            color: maroon;
+			border-color: transparent; 
+        }
+
+        .transaction-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .delivery-note {
+            color: black;
+			font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            max-width: 700px;
+            margin: 0 auto;           
+        }
+				                         
+        .footer {
+            background-color: #1a1a1a;
+            padding: 40px 0 20px;
+            margin-top: 50px;
+			width: 100%;
+        }
+
+        .footer-nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-bottom: 30px;
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            letter-spacing: 1px;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: gold;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin-bottom: 50px;
+        }
+
+        .social-icon img {
+            width: 30px;
+            height: 30px;
+            transition: transform 0.3s ease;
+        }
+
+        .social-icon:hover img {
+            transform: translateY(-3px);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .footer-bottom p {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 14px;
+            margin: 50;
+        }
+		
+		@media screen and (max-width: 1200px) {
+            .nav-left, .nav-right {
+                gap: 30px;
+                margin: 10px 20px;
+            }
+
+            .nav-right {
+                margin-right: 20px;
+            }
+
+            .logo {
+                position: relative;
+                left: 0;
+                transform: none;
+                margin: 10px auto;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                padding: 20px 0;
+            }
+
+            .nav-left, .nav-right {
+                justify-content: center;
+                margin: 10px 0;
+            }
+
+            .logo {
+                margin: 20px 0;
+            }
+        }
+		
+    </style>
+</body>
+</html>
